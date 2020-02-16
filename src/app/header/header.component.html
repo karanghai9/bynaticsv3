@@ -1,0 +1,32 @@
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Bynatics</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active" [ngClass]="{'active': selected === 'Home'}"><a href="#" (click)="onSelect('Home')">Home</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Courses<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#" (click)="onSelect('Angular9')">Angular9</a></li>
+            <li><a href="#" (click)="onSelect('Artificial Intelligence')">Artificial Intelligence</a></li>
+            <li><a href="#" (click)="onSelect('React')">React</a></li>
+          </ul>
+        </li>
+        <li class="" [ngClass]="{'active': selected === 'About'}"><a href="#" (click)="onSelect('About')">About</a></li>
+        <li class="" [ngClass]="{'active': selected === 'Contact'}"><a href="#" (click)="onSelect('Contact')">Contact Us</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><button class="btn btn-success navbar-btn mr-3"><span class="glyphicon glyphicon-user"></span> Register</button></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  
